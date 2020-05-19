@@ -1,5 +1,7 @@
 # calculator.py
 
+import math
+
 def calc_input():
     a = input("Enter the first number: ")
     b = input("Enter the second number: ")
@@ -45,6 +47,8 @@ def math_command(a, b):
     else:
         print("{} is not a valid command".format(c))
 
-x, y = calc_input()
-math_command(x, y)
-print("Finished")
+if __name__ == "__main__":
+    x, y = calc_input()
+    math_command(x, y)
+
+    print("Finished")
